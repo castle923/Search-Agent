@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude API 키 설정 · AI 공모전 알림</title><style>{{style}}
+input[type=password] { font:inherit; width:100%; padding:12px; border:1px solid var(--line); border-radius:10px; background:var(--bg); color:var(--ink); }
+.settings-form { display:grid; gap:12px; }
+a { color:var(--ink); }
+</style></head><body><main>
+<p><a href="/">← 공모전 검색으로</a></p><h1>Claude API 키 설정</h1>
+<p class="sub">키는 이 PC에 저장됩니다. ‘설정됨’은 저장 여부이며 API 연결 확인을 뜻하지 않습니다. Tavily와 메일 설정은 그대로 유지합니다.</p>
+<section class="panel"><p role="status">{{status}}</p>
+<form class="settings-form" method="post" action="/settings">
+<input type="hidden" name="token" value="{{token}}">
+<label for="api-key">새 Claude API 키</label>
+<input id="api-key" name="api_key" type="password" placeholder="sk-ant-…" required maxlength="507" autocomplete="new-password" spellcheck="false" aria-describedby="key-help">
+<p id="key-help" class="sub">저장하면 기존 키를 교체합니다. 저장된 값은 화면에 표시하지 않습니다. 저장만으로 API를 호출하거나 메일을 보내지 않습니다.</p>
+<button type="submit">키 저장</button>
+</form></section></main></body></html>

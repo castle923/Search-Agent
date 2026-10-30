@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.venv/
+.venv-local/
+__pycache__/
+outbox/
+data/sent_history.json
+HANDOVER.md
+*.log
+docs/RESTORE.md
+docs/agent-failures.html
+docs/DASHBOARD_V16_SPEC.md
+.pytest_cache/
+*.py[cod]

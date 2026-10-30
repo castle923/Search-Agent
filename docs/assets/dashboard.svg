@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860" viewBox="0 0 1280 860" role="img" aria-labelledby="title desc">
+<title id="title">Contest Radar — fixture 기반 대시보드 구성도</title>
+<desc id="desc">실제 스크린샷이 아닌 화면 구성도. 기준일 2026-11-02 가상 데이터: 유효 4건, 제외 4건, 임박 2건, 통과율 50%.</desc>
+<defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#3563ee" stop-opacity=".22"/><stop offset="1" stop-color="#3563ee" stop-opacity="0"/></linearGradient></defs>
+<style>text{font-family:Arial,'Malgun Gothic',sans-serif;fill:#19243b}.muted{fill:#69758c}.small{font-size:14px}.label{font-size:16px}.heading{font-size:20px;font-weight:700}.white{fill:white}.number{font-size:46px;font-weight:700}.panel{fill:white;stroke:#e8edf5}.blue{fill:#3563ee}</style>
+<rect width="1280" height="860" fill="#f5f7fb"/>
+<rect width="1280" height="76" fill="white"/>
+<rect x="40" y="21" width="34" height="34" rx="9" fill="#3563ee"/><text x="51" y="45" class="white heading">✦</text>
+<text x="87" y="46" class="heading">Contest Radar</text><text x="1010" y="45" class="small blue">대시보드</text><text x="1120" y="45" class="small muted">API 키 설정</text>
+<text x="40" y="128" font-size="30" font-weight="700">공모전 대시보드</text><text x="40" y="156" class="muted label">기회를 찾고, 근거를 검증하고, 승인한 메일만 발송합니다.</text>
+<rect x="1050" y="108" width="190" height="34" rx="17" fill="#eaf0ff"/><text x="1070" y="131" class="small blue">가상 데이터 · 구성도</text>
+<rect class="panel" x="40" y="184" width="1200" height="84" rx="16"/>
+<rect class="panel" x="60" y="204" width="650" height="44" rx="9"/><text x="78" y="233" class="label">AI 공모전 · 해커톤</text>
+<rect class="panel" x="728" y="204" width="180" height="44" rx="9"/><text x="747" y="233" class="small">2026-11-02</text><text x="930" y="233" class="small muted">가상 데이터</text>
+<rect x="1060" y="204" width="160" height="44" rx="9" fill="#3563ee"/><text x="1095" y="233" class="white label">공모전 검색</text>
+<rect x="40" y="292" width="384" height="144" rx="16" fill="#3563ee"/><text x="66" y="326" class="white label">메일에 담을 공고</text><text x="66" y="385" class="white number">4</text><text x="66" y="412" class="white small">검증을 통과한 기회</text>
+<rect class="panel" x="448" y="292" width="384" height="144" rx="16"/><text x="474" y="326" class="muted label">걸러낸 결과</text><text x="474" y="385" class="number">4</text><text x="474" y="412" class="muted small">중복 · 마감 · 필수값 · 날짜 오류</text>
+<rect class="panel" x="856" y="292" width="384" height="144" rx="16"/><text x="882" y="326" class="muted label">이번 주 마감</text><text x="882" y="385" class="number">2</text><text x="882" y="412" class="muted small">오늘 포함 7일 이내</text>
+<rect class="panel" x="40" y="460" width="740" height="290" rx="16"/><text x="66" y="499" class="heading">마감 일정</text><text x="552" y="499" class="small muted">현재 검색 결과 기준</text>
+<path d="M95 560H720M95 680H720" fill="none" stroke="#e8edf5" stroke-dasharray="5 5"/>
+<path d="M110 560 C170 560 190 560 250 560 S340 680 400 680 S490 560 550 560 S640 560 700 560 L700 680H110Z" fill="url(#area)"/>
+<path d="M110 560 C170 560 190 560 250 560 S340 680 400 680 S490 560 550 560 S640 560 700 560" fill="none" stroke="#3563ee" stroke-width="3"/>
+<g fill="white" stroke="#3563ee" stroke-width="3"><circle cx="110" cy="560" r="5"/><circle cx="250" cy="560" r="5"/><circle cx="400" cy="680" r="5"/><circle cx="550" cy="560" r="5"/><circle cx="700" cy="560" r="5"/></g>
+<g text-anchor="middle" class="small"><text x="110" y="544">1</text><text x="250" y="544">1</text><text x="400" y="663">0</text><text x="550" y="544">1</text><text x="700" y="544">1</text><text x="110" y="716">오늘</text><text x="250" y="716">1–7일</text><text x="400" y="716">8–14일</text><text x="550" y="716">15–30일</text><text x="700" y="716">31일 이상</text></g>
+<rect class="panel" x="804" y="460" width="436" height="290" rx="16"/><text x="830" y="499" class="heading">검증 결과</text>
+<circle cx="910" cy="594" r="61" fill="none" stroke="#b8c8ed" stroke-width="17"/><circle cx="910" cy="594" r="61" fill="none" stroke="#3563ee" stroke-width="17" stroke-dasharray="191.64 191.64" transform="rotate(-90 910 594)"/>
+<text x="910" y="598" text-anchor="middle" font-size="30" font-weight="700">50%</text><text x="910" y="621" text-anchor="middle" class="small muted">검증 통과율</text>
+<circle cx="1020" cy="575" r="5" fill="#3563ee"/><text x="1036" y="580" class="label">유효 공고</text><text x="1186" y="580" class="label">4</text>
+<circle cx="1020" cy="614" r="5" fill="#b8c8ed"/><text x="1036" y="619" class="label">제외 항목</text><text x="1186" y="619" class="label">4</text>
+<text x="830" y="704" class="small muted">중복 1 · 마감 1 · 필수값 1 · 날짜 1</text>
+<text x="40" y="791" class="label">검색 → 정보 추출 → 규칙 검증 → 메일 미리보기 → 사람 승인 → 발송</text>
+<text x="40" y="828" class="small muted">화면 구성 설명용 SVG · 실측 스크린샷 아님 · 데이터는 저장소 fixture에서 재현 가능</text>
+</svg>

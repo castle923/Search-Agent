@@ -1,0 +1,50 @@
+{
+  "today": "2026-11-02",
+  "rule_cases": [
+    {"id": "R01", "desc": "정상 공고",
+     "item": {"title": "AI 창업 아이디어 공모전 2026", "provider": "가상창업진흥원", "target": "스타트업", "raw_date": "2026.11.30", "url": "https://example.com/a"},
+     "expected_visible": true, "expected_end_date": "2026-11-30"},
+    {"id": "R02", "desc": "마감 지난 공고",
+     "item": {"title": "AI 경진대회 2025", "provider": "어떤기관", "target": "학생", "raw_date": "2025-11-01", "url": "https://example.com/b"},
+     "expected_visible": false, "expected_reason": "expired"},
+    {"id": "R03", "desc": "링크 누락",
+     "item": {"title": "AI 데이터톤", "provider": "가상데이터원", "raw_date": "2026.12.01", "url": ""},
+     "expected_visible": false, "expected_reason": "missing_field"},
+    {"id": "R04", "desc": "상대경로 링크",
+     "item": {"title": "AI 아트 공모", "provider": "가상문화재단", "raw_date": "2026.12.01", "url": "/notice/123"},
+     "expected_visible": false, "expected_reason": "bad_url"},
+    {"id": "R05", "desc": "날짜 파싱 불가",
+     "item": {"title": "AI 에세이 공모", "provider": "가상연구소", "raw_date": "상시(추후 공지)", "url": "https://example.com/c"},
+     "expected_visible": false, "expected_reason": "bad_date"},
+    {"id": "R06", "desc": "한글 날짜 표기",
+     "item": {"title": "AI 해커톤", "provider": "가상시청", "raw_date": "2026년 11월 9일까지", "url": "https://example.com/d"},
+     "expected_visible": true, "expected_end_date": "2026-11-09", "expected_badge": "이번 주 마감"},
+    {"id": "R07", "desc": "오늘 마감(연도 없는 표기)",
+     "item": {"title": "청년 AI 영상전", "provider": "가상미디어", "raw_date": "~ 11/2", "url": "https://example.com/e"},
+     "expected_visible": true, "expected_end_date": "2026-11-02", "expected_badge": "오늘 마감"},
+    {"id": "R08", "desc": "연도 없는 지난 날짜는 내년으로 넘기지 않는다(3개월 초과)",
+     "item": {"title": "AI 핵캠프", "provider": "가상과학관", "raw_date": "4월 24일까지", "url": "https://example.com/f"},
+     "expected_visible": false, "expected_reason": "expired"},
+    {"id": "R09", "desc": "연도 없는 날짜가 3개월 이내면 내년으로 본다",
+     "item": {"title": "AI 겨울 챌린지", "provider": "가상재단", "raw_date": "~1/15", "url": "https://example.com/g"},
+     "expected_visible": true, "expected_end_date": "2027-01-15"}
+  ],
+  "dedupe_case": {
+    "desc": "꾸밈말만 다른 같은 공고는 1건만 남아야 한다",
+    "items": [
+      {"title": "제3회 한빛 AI 공모전 참가자 모집", "provider": "한빛AI재단", "raw_date": "2026.11.20", "url": "https://example.com/x"},
+      {"title": "[재공지] 제3회 한빛 AI 공모전", "provider": "한빛AI재단", "raw_date": "2026년 11월 20일", "url": "https://blog.example.com/y"}
+    ],
+    "expected_valid": 1
+  },
+  "e2e_expected": {
+    "visible_titles": [
+      "청년 생성형 AI 영상 공모전",
+      "그린시티 공공데이터 AI 해커톤",
+      "제3회 한빛 AI 서비스 아이디어 공모전 참가자 모집",
+      "스타트업 AI 에이전트 챌린지"
+    ],
+    "hidden_titles": ["2026 서해 AI 해커톤 (접수 마감)", "AI 헬스케어 데이터 경진대회", "AI 윤리 에세이 공모", "올해 AI 공모전 트렌드 분석 기사"],
+    "min_attempts": 2
+  }
+}

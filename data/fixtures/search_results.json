@@ -1,0 +1,52 @@
+{
+  "_note": "실습용 가상 데이터입니다. 실제 공고가 아니며 URL은 example.com 입니다. evals 기준일 TODAY=2026-11-02 에 맞춰 만들었습니다.",
+  "round1": [
+    {
+      "title": "제3회 한빛 AI 서비스 아이디어 공모전 참가자 모집",
+      "url": "https://example.com/hanbit-ai-idea-2026",
+      "content": "주최: 한빛AI재단 | 분야: 공모전 | 대상: 대학생 및 대학원생 | 접수기간: 2026.10.20 ~ 2026.11.20 | 생성형 AI를 활용한 서비스 아이디어를 모집합니다."
+    },
+    {
+      "title": "[재공지] 제3회 한빛 AI 서비스 아이디어 공모전",
+      "url": "https://blog.example.com/repost-hanbit-ai",
+      "content": "주최: 한빛AI재단 | 분야: 공모전 | 대상: 대학생 | 접수기간: 2026년 11월 20일까지 | 블로그 재게시 글입니다."
+    },
+    {
+      "title": "2026 서해 AI 해커톤 (접수 마감)",
+      "url": "https://example.com/seohae-hackathon-2026",
+      "content": "주최: 서해디지털진흥원 | 분야: 해커톤 | 대상: 일반 | 접수기간: 2026.09.01 ~ 2026.10.15 | 접수가 마감되었습니다."
+    },
+    {
+      "title": "AI 헬스케어 데이터 경진대회",
+      "url": "",
+      "content": "주최: 미래의료데이터센터 | 분야: 경진대회 | 대상: 개발자 | 접수기간: 2026.11.01 ~ 2026.12.10 | 링크가 없는 검색 결과입니다."
+    },
+    {
+      "title": "올해 AI 공모전 트렌드 분석 기사",
+      "url": "https://news.example.com/ai-contest-trend",
+      "content": "기사 | 최근 AI 공모전이 늘고 있다는 분석 기사입니다. 공고가 아닙니다."
+    }
+  ],
+  "round2": [
+    {
+      "title": "그린시티 공공데이터 AI 해커톤",
+      "url": "https://example.com/greencity-ai-hackathon",
+      "content": "주최: 그린시티 | 분야: 해커톤 | 대상: 일반 | 접수기간: 2026-10-25 ~ 2026-11-07 | 무박 2일 해커톤."
+    },
+    {
+      "title": "청년 생성형 AI 영상 공모전",
+      "url": "https://example.com/youth-genai-video",
+      "content": "주최: 청년미디어센터 | 분야: 공모전 | 대상: 학생 | 접수기간: ~ 11/2 | 오늘 자정까지 접수."
+    },
+    {
+      "title": "스타트업 AI 에이전트 챌린지",
+      "url": "https://example.com/startup-agent-challenge",
+      "content": "주최: 오픈이노베이션랩 | 분야: 경진대회 | 대상: 스타트업 | 접수기간: 2026년 11월 1일 ~ 2026년 12월 15일 | AI 에이전트 실증 과제."
+    },
+    {
+      "title": "AI 윤리 에세이 공모",
+      "url": "https://example.com/ai-ethics-essay",
+      "content": "주최: 디지털시민연구소 | 분야: 공모전 | 대상: 일반 | 접수기간: 상시(추후 공지) | 날짜가 정해지지 않은 공고."
+    }
+  ]
+}

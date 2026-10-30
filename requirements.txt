@@ -1,0 +1,8 @@
+langgraph>=1.0
+pydantic>=2
+python-dotenv
+tavily-python
+# LLM 은 하나만 골라 설치 (LLM_PROVIDER 와 맞추기)
+langchain-anthropic
+# langchain-google-genai
+# langchain-openai
